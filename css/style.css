@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+body {
+  background: url("../img/background.jpg");
+}
+html,
+body {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 113.5rem;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 6.4rem 0;
+}
+
+.header .container,
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 7.9rem;
+  height: 2.8rem;
+  margin-right: 3.9rem;
+}
+
+.header__nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__social-icon {
+  width: 1.7rem;
+  height: 1.6rem;
+}
+
+.footer {
+  background: #030102;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.footer__menu {
+  display: flex;
+  padding-left: 0;
+}
+
+.footer__menu li {
+  list-style: none;
+}
+
+.footer__menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__nav a:not(:last-child),
+.header__social-icon:not(:last-child),
+.footer__menu li:not(:last-child) {
+  margin-right: 2.4rem;
+}
